@@ -14,7 +14,7 @@ dsh-request-image-cap shrinks the copy of each image sent to the model so no sid
 - A failing chat does NOT need to be abandoned: once the cap is active, the same chat sends again.
 
 ## 0. Facts (read-only)
-1. Plugin dir: `node -p "require('path').dirname(require.resolve('dsh-request-image-cap/package.json',{paths:[(process.env.DSH_HOME||require('os').homedir()+'/.dsh')+'/profiles/web']}))"`
+1. Plugin dir: `node -p "require('path').dirname(require.resolve('@lucagiftzek/dsh-request-image-cap/package.json',{paths:[(process.env.DSH_HOME||require('os').homedir()+'/.dsh')+'/profiles/web']}))"`
    Docs: `<plugin dir>/docs/TROUBLESHOOTING.md`, `docs/ERRORS.md`.
 2. `dsh --version`
 3. Log: `journalctl -u <your-dsh-unit> --since today | grep request-image-cap | tail -20`

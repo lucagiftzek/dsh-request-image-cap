@@ -1,9 +1,12 @@
 # dsh-request-image-cap
 
+[![npm](https://img.shields.io/npm/v/%40lucagiftzek%2Fdsh-request-image-cap?label=npm)](https://www.npmjs.com/package/@lucagiftzek/dsh-request-image-cap)
+
 Clamps every image sent to the model to a pixel cap, so many-image requests stop failing.
 
 ```bash
-dsh plugin --profile web add github:lucagiftzek/dsh-request-image-cap
+dsh plugin --profile web add @lucagiftzek/dsh-request-image-cap
+# or from GitHub: dsh plugin --profile web add github:lucagiftzek/dsh-request-image-cap
 # then restart dsh web
 ```
 
@@ -68,8 +71,11 @@ long edge lands at or under `cap`, aspect ratio preserved.
 
 ## Install
 
+Install from npm: `dsh plugin --profile web add @lucagiftzek/dsh-request-image-cap`, or from GitHub: `dsh plugin --profile web add github:lucagiftzek/dsh-request-image-cap`.
+
 ```bash
-dsh plugin --profile web add github:lucagiftzek/dsh-request-image-cap
+dsh plugin --profile web add @lucagiftzek/dsh-request-image-cap
+# or from GitHub: dsh plugin --profile web add github:lucagiftzek/dsh-request-image-cap
 ```
 
 The package declares `dsh.bundle`, so it joins `dsh.profile.bundles` and its own patch

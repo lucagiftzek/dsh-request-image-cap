@@ -3,7 +3,7 @@
 # cordis.patch.yml may override it with a "- id: request-image-cap" row.
 - insert:
     - id: request-image-cap
-      name: dsh-request-image-cap
+      name: '@lucagiftzek/dsh-request-image-cap'
       config:
         enabled: true
         maxDimension: 2000

@@ -1,5 +1,5 @@
 {
-  "name": "dsh-request-image-cap",
+  "name": "@lucagiftzek/dsh-request-image-cap",
   "version": "0.1.0",
   "description": "Clamp the per-side pixel size of every image DSH projects into a model request (Anthropic refuses >2000 px per side once a request carries many images).",
   "type": "module",
@@ -29,12 +29,12 @@
     }
   },
   "keywords": [
+    "anthropic",
+    "attachments",
+    "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "deepseek-harness",
-    "attachments",
-    "images",
-    "anthropic"
+    "images"
   ],
   "author": {
     "name": "Luca Tzekos",
@@ -47,5 +47,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucagiftzek/dsh-request-image-cap.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
