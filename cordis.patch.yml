@@ -1,0 +1,9 @@
+# Copyright © 2026 · SPDX-License-Identifier: MIT
+# Mount the request-image per-side cap. Config lives here; the profile's own
+# cordis.patch.yml may override it with a "- id: request-image-cap" row.
+- insert:
+    - id: request-image-cap
+      name: dsh-request-image-cap
+      config:
+        enabled: true
+        maxDimension: 2000

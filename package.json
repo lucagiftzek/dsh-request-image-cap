@@ -1,0 +1,51 @@
+{
+  "name": "dsh-request-image-cap",
+  "version": "0.1.0",
+  "description": "Clamp the per-side pixel size of every image DSH projects into a model request (Anthropic refuses >2000 px per side once a request carries many images).",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "files": [
+    "src",
+    "docs",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "attachments",
+    "images",
+    "anthropic"
+  ],
+  "author": {
+    "name": "Luca Tzekos",
+    "url": "https://jobopportunitiesapi.org"
+  },
+  "homepage": "https://github.com/lucagiftzek/dsh-request-image-cap#readme",
+  "bugs": {
+    "url": "https://github.com/lucagiftzek/dsh-request-image-cap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucagiftzek/dsh-request-image-cap.git"
+  }
+}
